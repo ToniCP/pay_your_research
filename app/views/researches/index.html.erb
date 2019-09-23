@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="return">
+    <%= link_to image_tag('https://cdn.discordapp.com/attachments/596044754555502662/625663376969826335/unknown.png') %>
+  </div>
+
+  <div class="information">
+
+    <div class="research">
+      <%= label_tag(:label, "Paga tu investigación") %>
+    </div>
+
+    <label class="text">Con este pago de <b class="amount">$450</b> cubres el costro de tu investigación, esto es necesario para <b class="highlighted">aplicar a cualquiera de nuestros inmuebles</b></label>
+
+    <div class="discount">
+      <%= label_tag(:label, "¿Tienes un cupón de descuento?") %>
+    </div>
+
+    <div class="button_delete">
+      <%= text_field_tag 'code', nil, placeholder: 'HOMIE_50' %>
+      <%= submit_tag("Eliminar") %>
+    </div>
+
+    <div class="coupon_accepted">
+      <%= image_tag('https://cdn.discordapp.com/attachments/596044754555502662/625663430128566287/unknown.png') %>
+      <%= label_tag(:label, "Tu cupón ha sido aplicado") %>
+    </div>
+
+    <div class="payment_method">
+      <%= label_tag("Elige tu método de pago") %>
+    </div>
+
+    <div class="buttons_pay">
+      <%= image_tag 'https://cdn.discordapp.com/attachments/596044754555502662/625663612748300289/purple_card.png', :class => "purple", :id => "js-hide-car", :onclick => "jsHideCar()" %>
+      <%= image_tag 'https://cdn.discordapp.com/attachments/596044754555502662/625663611007926282/white_card.png', :class => "white", :id => "js-show-car" %>
+      <%= image_tag 'https://cdn.discordapp.com/attachments/596044754555502662/625663607262281739/purple_oxxo.png', :class => "purple", :id => "js-hide-oxxo", :onclick => "jsHideOxxo()"  %>
+      <%= image_tag 'https://cdn.discordapp.com/attachments/596044754555502662/625663603059589141/white_oxxo.png', :class => "white", :id => "js-show-oxxo" %>
+      <%= image_tag 'https://cdn.discordapp.com/attachments/596044754555502662/625663609095061524/purple_spei.png', :class => "purple", :id => "js-hide-spei", :onclick => "jsHideSpei()"  %>
+      <%= image_tag 'https://cdn.discordapp.com/attachments/596044754555502662/625663605487960064/white_spei.png', :class => "white", :id => "js-show-spei" %>
+    </div>
+
+  </div>
+</div>

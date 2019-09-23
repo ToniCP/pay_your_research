@@ -1,0 +1,113 @@
+$color-purple: #907cf7;
+$color-gray: #808080;
+$color-gray-strong: #555555;
+
+%fromat-buttons {
+  cursor: pointer;
+  width: 54px;
+  height: 30px;
+  border: 1px solid $color-purple;
+  margin-right: 24px;
+  padding: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.container {
+  background-color: #fdfdfd;
+  border: 1px solid $color-purple;
+  padding: 50px;
+  width: 524px;
+
+  .return {
+    float: left;
+    padding-right: 20px;
+
+    a {
+      background-color: white;
+    }
+  }
+
+  .information {
+    margin-left: 80px;
+    width: 384px;
+
+    .research {
+
+      label {
+        font-size: 23px;
+        margin-bottom: 35px;
+      }
+    }
+
+    .text {
+      font-size: 17px;
+      color: $color-gray;
+      font-weight: lighter;
+      margin-bottom: 35px;
+
+      .amount {
+        color: $color-purple;
+      }
+
+      .highlighted {
+        color: $color-gray-strong;
+      }
+    }
+
+    .discount {
+      font-size: 24px;
+      padding-bottom: 30px;
+      color: $color-gray-strong;
+    }
+
+    input[type=text] {
+      font-size: 30px;
+      width: 164px;
+      padding: 10px;
+      color: #a9a9a9;
+    }
+
+    input[type=submit] {
+      background-color: inherit;
+      border: 1px solid $color-purple;
+      margin-left: 10px;
+      font-size: 30px;
+      width: 144px;
+      padding: 10px;
+      color: $color-purple;
+    }
+
+    .coupon_accepted {
+      padding-bottom: 30px;
+
+      img {
+        float: left;
+      }
+
+      label {
+        color: $color-gray;
+        font-size: 15px;
+      }
+    }
+
+    .payment_method {
+      padding-bottom: 44px;
+      color: $color-gray-strong;
+
+      label {
+        font-size: 23px;
+      }
+    }
+
+    .purple {
+      @extend %fromat-buttons;
+    }
+
+    .white {
+      @extend %fromat-buttons;
+      background-color: $color-purple;
+    }
+  }
+}
